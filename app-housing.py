@@ -32,7 +32,7 @@ level = st.sidebar.radio(
 if level =='Low':
     df = df[df.median_income <= 2.5]
 elif level =='Median':
-    df = df[df.median_income > 2.5 & df.median_income <= 4.5]
+    df = df[(df.median_income > 2.5) & (df.median_income <= 4.5)]
 elif level =='High':
     df = df[df.median_income > 4.5]
 
