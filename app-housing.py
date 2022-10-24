@@ -19,10 +19,10 @@ location_type = st.sidebar.multiselect(
      df.ocean_proximity.unique(),  # options
      df.ocean_proximity.unique())  # defaults top 3 countries in population
 
-# filter by population
+
 df = df[df.median_house_value <= medianhousevalue]
 
-# filter by country
+
 df = df[df.ocean_proximity.isin(location_type)]
 
 level = st.sidebar.radio(
